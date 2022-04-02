@@ -1,1 +1,2 @@
-# discordchatbot
+# DiscordChatBot
+An interactive chatbot for your Discord Server with the use of the Brainshop AI.
