@@ -1,7 +1,6 @@
 import os
 import discord
 from discord.ext import commands
-from webserver import keep_alive
 
 intents = discord.Intents(messages=True, guilds=True)
 
@@ -39,8 +38,4 @@ for filename in os.listdir('./cogs'):
     client.load_extension(f"cogs.{filename[:-3]}")
     print(f"Successfully loaded {filename}\n")
 
-
-
-
-keep_alive()
-client.run(os.getenv('TOKEN'))
+client.run("<your bot token here>")
